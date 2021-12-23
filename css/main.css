@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  z-index: 3;
+  margin-top: 30px;
+}
+.header-logo {
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-nav a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #a1a1a1;
+}
+.header-nav a:hover {
+  color: #000;
+}
+.header-reg {
+  border: 5px solid #000;
+  padding: 5px 15px 5px 15px;
+  background: none;
+  font-weight: 800;
+  display: block;
+  margin: 0 auto;
+}
+.header-log {
+  border: 5px solid #000;
+  padding: 5px 15px 5px 15px;
+  background: none;
+  font-weight: 800;
+  display: block;
+  margin: 0 auto;
+  margin-right: 30px;
+}
+.header-btn {
+  display: flex;
+}
+.header-name {
+  font-size: 24px;
+  font-weight: 800;
+  display: none;
+  color: #000;
+  margin: auto 30px auto auto;
+}
+.header-cab {
+  border: 5px solid #000;
+  padding: 5px 15px 5px 15px;
+  background: none;
+  font-weight: 800;
+  margin: 0 auto;
+  margin-right: 30px;
+  display: none;
+}
+.header-logout {
+  border: 5px solid #000;
+  padding: 5px 15px 5px 15px;
+  background: none;
+  font-weight: 800;
+  margin: 0 auto;
+  display: none;
+}
+
+.profile {
+  margin-top: 150px;
+}
+.profile-name {
+  font-size: 36px;
+  font-weight: 800;
+}
+.profile-change {
+  margin-top: 50px;
+}
+.profile-change__title {
+  font-size: 24px;
+}
+.profile-change__btn {
+  border: 5px solid #000;
+  padding: 5px 15px 5px 15px;
+  background: none;
+  font-weight: 800;
+  display: block;
+  margin-top: 15px;
+}
+.profile-change__input {
+  border: 5px solid #000;
+  padding: 5px 15px 5px 15px;
+  background: none;
+  font-weight: 800;
+  display: block;
+  margin-top: 15px;
+}
+.profile-form {
+  display: none;
+}
+.profile-form__input {
+  width: 309px;
+  height: 42px;
+  display: block;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #75D6FF;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.popup-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.popup-input {
+  width: 309px;
+  height: 42px;
+  display: block;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #75D6FF;
+}
+.popup-reg {
+  width: 309px;
+}
+.popup-error {
+  color: #C81E43;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.popuplog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.popuplog-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.popuplog-input {
+  width: 309px;
+  height: 42px;
+  display: block;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #75D6FF;
+}
+.popuplog-reg {
+  width: 309px;
+}
+.popuplog-error {
+  color: #C81E43;
+  margin-top: 30px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.assets-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.assets-block {
+  position: relative;
+  cursor: pointer;
+}
+.assets-block::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.7s;
+}
+.assets-block:hover::before {
+  opacity: 0.7;
+}
+.assets-block:hover .assets-block__text {
+  transition: 0.7s;
+  opacity: 1;
+}
+.assets-block__img {
+  width: 100%;
+}
+.assets-block__text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1;
+  color: #fff;
+  font-weight: 800;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.asset-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.asset-text {
+  font-size: 16px;
+  margin-top: 15px;
+  padding-right: 100px;
+  text-align: justify;
+}
+.asset-desc {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.cm-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-top: 115px;
+  margin-bottom: 30px;
+}
+.cm-name {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 800;
+}
+.cm-time {
+  text-align: right;
+  font-size: 12px;
+  color: #7b7b7b;
+}
+.cm-body {
+  position: relative;
+  margin-bottom: 30px;
+}
+.cm-btn {
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  border: 0;
+  background: #000;
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.cm-error {
+  color: red;
+}/*# sourceMappingURL=main.css.map */
